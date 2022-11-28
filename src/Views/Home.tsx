@@ -63,7 +63,7 @@ export default function Main() {
         <div className="modal-background"></div>
         <div className="modal-card">
           <div className="modal-card-head is-radiusless">
-            <p className="modal-card-title">Client Information</p>
+            <p className="modal-card-title ">Client Information</p>
             <button className="delete is-pulled-right" aria-label="close" onClick={closeModal}></button>
           </div>
           <section className="modal-card-body columns">
@@ -111,7 +111,7 @@ export default function Main() {
   
   return (
     <>
-      <h2 className="is-size-2 pb-6 has-text-weight-medium">Client List</h2>
+      <h2 className="is-size-2 pb-6 has-text-weight-medium has-text-centered">Client Information</h2>
       <div className="box columns is-centered is-radiusless">
         <div className="column is-12 px-0 py-0"> 
             <table className="table is-striped is-fullwidth">
@@ -144,6 +144,11 @@ export default function Main() {
             />
         </div>
       </div>
+      <div className="content container has-text-centered">
+            <h1 className="title has-text-success">
+            <button className="button">Edit Info</button>
+            </h1>
+        </div>
     </>
   );
 }
